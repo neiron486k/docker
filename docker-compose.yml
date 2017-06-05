@@ -24,6 +24,9 @@ services:
       - "4000:22"
     cap_add:
       - ALL
+    dns:
+      - 172.17.0.1
+      - 8.8.8.8
     environment:
       - TZ=Europe/Moscow
   mysql:
