@@ -15,6 +15,6 @@ RUN mv phing-latest.phar /usr/local/bin/phing
 
 COPY xdebug.ini $INI_CONF/mods-available/
 
-EXPOSE 9000 9010 22
+EXPOSE 22
 
 WORKDIR /usr/share/nginx/www

@@ -25,10 +25,11 @@ services:
     cap_add:
       - ALL
     dns:
-      - 172.17.0.1
+      - 172.18.0.1
       - 8.8.8.8
     environment:
       - TZ=Europe/Moscow
+      - LOCAL_USER_ID=1000
   mysql:
     container_name: mysql
     build: ./mysql
